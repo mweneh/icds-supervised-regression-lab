@@ -1,8 +1,10 @@
-# ICDS Supervised Regression Lab
+# ICDS supervised learning labs
 
-A practical Python and scikit-learn lab for **OPIC 4: Supervised Machine Learning — Regression**.
+Practical Python and scikit-learn typing labs for the ICDS Introduction to Machine Learning course.
 
-The notebook uses historical automobile data to predict city fuel efficiency (`mpg`) and guides learners through a complete regression workflow:
+## Topic 4 · Regression
+
+The regression notebook uses historical automobile data to predict city fuel efficiency (`mpg`) and guides learners through a complete workflow:
 
 - Preparing and inspecting a regression dataset
 - Establishing a mean baseline
@@ -22,8 +24,31 @@ The notebook uses historical automobile data to predict city fuel efficiency (`m
 | File | Description |
 |---|---|
 | [`ICDS_Topic_4_Regression_Typing_Lab.ipynb`](./ICDS_Topic_4_Regression_Typing_Lab.ipynb) | Guided typing lab with prompts, hints, checkpoints, code cells, plots, and reflection questions |
+| [`ICDS_Topic_4_5_Regression_Classification_Typing_Lab.ipynb`](./ICDS_Topic_4_5_Regression_Classification_Typing_Lab.ipynb) | Paired regression and classification lab using e-commerce delivery outcomes |
 
 The notebook creates its teaching dataset (`auto_mpg.csv`) from an embedded copy when the setup cell is run. No separate dataset download is required.
+
+## Topics 4–5 · Regression and classification
+
+The comparison notebook uses the same completed orders and predictors for both tasks:
+
+- **Regression:** estimate elapsed days from purchase to delivery.
+- **Classification:** predict whether delivery was later than promised.
+
+It guides learners through defining targets and features, splitting data, fitting preprocessing only on training data, comparing task-specific metrics, and timing model fits. Classification results include precision, recall, F1 and a confusion matrix because late deliveries are less common than on-time deliveries.
+
+### Data setup
+
+The notebook needs these two Olist CSV files in the `data/` folder:
+
+- `olist_orders_dataset.csv`
+- `olist_customers_dataset.csv`
+
+Only the orders table and customer state are used. The raw CSV files are not included in Git. Download the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and copy those files into `data/`. See [`data/README.md`](./data/README.md) for details.
+
+Launch Jupyter from the repository root and open the comparison notebook. In Google Colab, upload the notebook and the two CSV files, then put the files in a folder named `data` beside the notebook before running it. The notebook's cells marked `TYPE` are learner exercises and are intentionally incomplete.
+
+The Olist records are historical and the lab includes delivered orders only. The notebook excludes actual delivery fields from its predictors because they are only known after the outcome. Cite the dataset when reusing the material and check its terms before redistributing the source files.
 
 ## Learning outcomes
 
