@@ -30,6 +30,8 @@ The notebook creates its teaching dataset (`auto_mpg.csv`) from an embedded copy
 
 ## Topics 4–5 · Regression and classification
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mweneh/icds-supervised-regression-lab/blob/topic-4-5-olist-lab/ICDS_Topic_4_5_Regression_Classification_Typing_Lab.ipynb)
+
 The comparison notebook uses the same completed orders and predictors for both tasks:
 
 - **Regression:** estimate elapsed days from purchase to delivery.
@@ -39,16 +41,16 @@ It guides learners through defining targets and features, splitting data, fittin
 
 ### Data setup
 
-The notebook needs these two Olist CSV files in the `data/` folder:
+The two Olist CSV files used by the notebook are included in the `data/` folder:
 
 - `olist_orders_dataset.csv`
 - `olist_customers_dataset.csv`
 
-Only the orders table and customer state are used. The raw CSV files are not included in Git. Download the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and copy those files into `data/`. See [`data/README.md`](./data/README.md) for details.
+Only the orders table and customer state are used. If the notebook is opened directly in Colab from GitHub, its setup cell downloads the files into the Colab runtime. A clone or branch ZIP already contains them. See [`data/README.md`](./data/README.md) for attribution and license details.
 
-Launch Jupyter from the repository root and open the comparison notebook. In Google Colab, upload the notebook and the two CSV files, then put the files in a folder named `data` beside the notebook before running it. The notebook's cells marked `TYPE` are learner exercises and are intentionally incomplete.
+For local Jupyter, launch from the repository root and open the comparison notebook. The notebook's cells marked `TYPE` are learner exercises and are intentionally incomplete.
 
-The Olist records are historical and the lab includes delivered orders only. The notebook excludes actual delivery fields from its predictors because they are only known after the outcome. Cite the dataset when reusing the material and check its terms before redistributing the source files.
+The Olist records are historical and the lab includes delivered orders only. The notebook excludes actual delivery fields from its predictors because they are only known after the outcome.
 
 ## Learning outcomes
 

@@ -1,10 +1,14 @@
-# Data folder
+# Olist source data
 
 The Topics 4–5 comparison notebook expects these source files here:
 
 - `olist_orders_dataset.csv`
 - `olist_customers_dataset.csv`
 
-They are part of the Brazilian E-Commerce Public Dataset by Olist, distributed through [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). Download the dataset and copy just those two CSV files into this folder. The notebook does not use the other tables.
+These files are from the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 
-The CSV files are excluded from Git to keep the course repository focused on teaching materials. After copying them here, start Jupyter from the repository root and run the notebook from top to bottom. Check the dataset's terms before sharing the raw files.
+**Attribution:** Olist, *Brazilian E-Commerce Public Dataset by Olist*, Kaggle. The two CSV files here are unmodified copies of files from that dataset.
+
+**License:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The license requires attribution, limits use to noncommercial purposes, and requires adaptations to use the same license. These terms apply to the Olist data, not automatically to every file in this repository.
+
+The comparison notebook uses only the orders table and the customer's state. When opened from GitHub in Colab, its setup cell downloads these two files into the runtime if they are missing.
